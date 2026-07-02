@@ -1,10 +1,10 @@
-# 🫀 Heart Disease Prevalence Predictor
+# Heart Disease Prevalence Predictor
 
 > Análisis exploratorio y modelo de Machine Learning para predecir la prevalencia de enfermedades cardíacas a partir de datos sociodemográficos por condado en Estados Unidos.
 
 ---
 
-## 📋 Tabla de contenidos
+## Tabla de contenidos
 
 - [Descripción](#descripción)
 - [Dataset](#dataset)
@@ -14,12 +14,13 @@
 - [Resultados](#resultados)
 - [Cómo ejecutar](#cómo-ejecutar)
 - [Conclusiones](#conclusiones)
-
+  
 ---
 
 ## Descripción
-
 Este proyecto aplica técnicas de **EDA (Exploratory Data Analysis)** y **Machine Learning supervisado** para analizar la relación entre factores sociodemográficos (edad, raza, educación, pobreza, mercado laboral y recursos sanitarios) y la prevalencia de enfermedades cardíacas en condados de Estados Unidos.
+
+---
 
 **Variable objetivo:** `Heart disease_prevalence`
 
@@ -39,7 +40,7 @@ Se entrenaron y compararon tres modelos de regresión:
 - **Nulos:** Ninguno
 - **Duplicados:** Ninguno
 
-### Grupos de variables principales
+  ### Grupos de variables principales
 
 | Grupo | Descripción |
 |---|---|
@@ -54,6 +55,7 @@ Se entrenaron y compararon tres modelos de regresión:
 
 ---
 
+
 ## Estructura del proyecto
 
 ```
@@ -63,15 +65,7 @@ Se entrenaron y compararon tres modelos de regresión:
 └── README.md
 ```
 
----
-
-## Tecnologías
-
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-EDA-150458?logo=pandas)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikit-learn)
-![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-4c72b0)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c)
+## Tencologías
 
 - `pandas`, `numpy` — manipulación y análisis de datos
 - `matplotlib`, `seaborn` — visualizaciones y heatmaps de correlación
@@ -104,7 +98,6 @@ Se entrenaron y compararon tres modelos de regresión:
 10. Guardado del modelo (.pkl)
 ```
 
----
 
 ## Resultados
 
@@ -121,24 +114,6 @@ El modelo guardado es **Random Forest** (`models/random_forest_model.pkl`), por 
 ### Variables más relevantes (Feature Importance — Random Forest)
 
 Las variables con mayor peso predictivo pertenecen a los grupos de **edad avanzada**, **prevalencia de otras enfermedades crónicas** (obesidad, diabetes, COPD) y **acceso a recursos sanitarios**.
-
----
-
-## Cómo ejecutar
-
-```bash
-# 1. Clonar el repositorio
-git clone <url-del-repo>
-cd <nombre-del-repo>
-
-# 2. Instalar dependencias
-pip install pandas numpy matplotlib seaborn scikit-learn
-
-# 3. Abrir el notebook
-jupyter notebook ML_RegresionLineal-Heart-disease-predictor.ipynb
-```
-
-> El dataset se carga directamente desde la URL en el notebook, no es necesario descargarlo manualmente.
 
 ---
 
